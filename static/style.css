@@ -121,7 +121,7 @@ a {
 .item.active {
     font-weight: 200;
     text-shadow: 1px 0 0 #ccc;
-  margin-left: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
