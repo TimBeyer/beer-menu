@@ -24,28 +24,32 @@ body {
 
 
 .description-holder {
-  perspective-origin:50% 50%;
-  perspective: 600px;
 
-  width: 1000px;
+  width: 740px;
   position: absolute;
   right: 60px;
   top: 20px;
+  perspective-origin:50% 50%;
+  perspective: 600px;
+
 }
 
 .description {
+
   position: absolute;
+
   text-align: right;
   
   font-size: 3em;
   opacity: 0;
   transition: opacity 1s, transform 2s;
-  transform: translateZ(-600px);
+  transform: translateX(600px);
+  height: 1040px
 }
 
 .description.active {
   display: block;
-  transform: translateZ(0px);
+  transform: translateX(0px);
   opacity: 1;
 }
 
@@ -54,9 +58,11 @@ body {
 }
 .description h1 {
   font-size: 8rem;
-  font-weight: 200;
   text-shadow: 1px 0 0 #ccc;
-  line-height: 24px;
+  line-height: 0em;
+  position: absolute;
+  bottom: 0px;
+  right: 0px
 }
 
 .description p {
@@ -67,9 +73,22 @@ body {
   text-align: left;
 }
 
+
 .image {
-  width: 170px;
+  position: absolute;
+  left: calc(50% - 115px);
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 230px;
+  opacity: 0;
 }
+
+.image.active {
+  opacity: 1;
+}
+
+
+
 
 .list {
   position: absolute;
