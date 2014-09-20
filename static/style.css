@@ -62,7 +62,8 @@ body {
   line-height: 0em;
   position: absolute;
   bottom: 0px;
-  right: 0px
+  right: 0px;
+  width: 1980px;
 }
 
 .description p {
@@ -81,6 +82,7 @@ body {
   transform: translate(0, -50%);
   width: 230px;
   opacity: 0;
+  transition: 0.5s all;
 }
 
 .image.active {
